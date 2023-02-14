@@ -12,7 +12,7 @@ Run `terraform -v` to show the version. If you are not running the latest versio
 
 Please list the resources as a list, for example:
 
-- slack_user
+- data.slack_user
 
 If this issue appears to affect multiple resources please mention this.
 
