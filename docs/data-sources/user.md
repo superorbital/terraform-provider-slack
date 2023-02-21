@@ -32,7 +32,7 @@ data "slack_user" "example" {
 - `enterprise_user` (Attributes) An object containing info related to an Enterprise Grid user. (see [below for nested schema](#nestedatt--enterprise_user))
 - `is_admin` (Boolean) Indicates whether the user is an Admin of the current workspace.
 - `is_app_user` (Boolean) Indicates whether the user is an authorized user of the calling app.
-- `is_bot` (Boolean) Indicates whether the user is actually a bot user.
+- `is_bot` (Boolean) Indicates whether the user is a bot user.
 - `is_owner` (Boolean) Indicates whether the user is an Owner of the current workspace.
 - `is_primary_owner` (Boolean) Indicates whether the user is the Primary Owner of the current workspace.
 - `is_restricted` (Boolean) Indicates whether or not the user is a guest user.
@@ -43,8 +43,8 @@ data "slack_user" "example" {
 - `real_name` (String) The user's first and last name
 - `team_id` (String) Identifier for this workspace user's team.
 - `tz` (String) A human-readable string for the geographic timezone-related region this user has specified in their account.
-- `tz_label` (String) Describes the commonly used name of the tz timezone.
-- `tz_offset` (Number) Indicates the number of seconds to offset UTC time by for this user's tz.
+- `tz_label` (String) Describes the commonly used name of the timezone defined in tz.
+- `tz_offset` (Number) Indicates the number of seconds to offset UTC by for this user's timezone.
 - `updated` (String) A Unix timestamp indicating when the user object was last updated.
 
 <a id="nestedatt--enterprise_user"></a>
@@ -68,12 +68,12 @@ Read-Only:
 - `display_name` (String) The display name the user has chosen to identify themselves by in their workspace profile.
 - `display_name_normalized` (String) The display_name field, but with any non-Latin characters filtered out.
 - `first_name` (String) The user's first name.
-- `image_192` (String) Contains the URL for the 192 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
-- `image_24` (String) Contains the URL for the 24 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
-- `image_32` (String) Contains the URL for the 32 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
-- `image_48` (String) Contains the URL for the 48 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
-- `image_512` (String) Contains the URL for the 512 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
-- `image_72` (String) Contains the URL for the 72 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
+- `image_192` (String) Contains the URL for the 192-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
+- `image_24` (String) Contains the URL for the 24-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
+- `image_32` (String) Contains the URL for the 32-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
+- `image_48` (String) Contains the URL for the 48-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
+- `image_512` (String) Contains the URL for the 512-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
+- `image_72` (String) Contains the URL for the 72-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
 - `image_original` (String) Contains the URL for the original square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.
 - `last_name` (String) The user's last name.
 - `phone` (String) The user's phone number, in any format.

@@ -132,7 +132,7 @@ func (d *userDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, r
 				Computed:    true,
 			},
 			"is_bot": schema.BoolAttribute{
-				Description: "Indicates whether the user is actually a bot user.",
+				Description: "Indicates whether the user is a bot user.",
 				Computed:    true,
 			},
 			"is_stranger": schema.BoolAttribute{
@@ -168,11 +168,11 @@ func (d *userDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, r
 				Computed:    true,
 			},
 			"tz_label": schema.StringAttribute{
-				Description: "Describes the commonly used name of the tz timezone.",
+				Description: "Describes the commonly used name of the timezone defined in tz.",
 				Computed:    true,
 			},
 			"tz_offset": schema.Int64Attribute{
-				Description: "Indicates the number of seconds to offset UTC time by for this user's tz.",
+				Description: "Indicates the number of seconds to offset UTC by for this user's timezone.",
 				Computed:    true,
 			},
 			"updated": schema.StringAttribute{
@@ -232,27 +232,27 @@ func (d *userDataSource) Schema(_ context.Context, _ datasource.SchemaRequest, r
 						Computed:    true,
 					},
 					"image_24": schema.StringAttribute{
-						Description: "Contains the URL for the 24 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
+						Description: "Contains the URL for the 24-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
 						Computed:    true,
 					},
 					"image_32": schema.StringAttribute{
-						Description: "Contains the URL for the 32 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
+						Description: "Contains the URL for the 32-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
 						Computed:    true,
 					},
 					"image_48": schema.StringAttribute{
-						Description: "Contains the URL for the 48 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
+						Description: "Contains the URL for the 48-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
 						Computed:    true,
 					},
 					"image_72": schema.StringAttribute{
-						Description: "Contains the URL for the 72 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
+						Description: "Contains the URL for the 72-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
 						Computed:    true,
 					},
 					"image_192": schema.StringAttribute{
-						Description: "Contains the URL for the 192 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
+						Description: "Contains the URL for the 192-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
 						Computed:    true,
 					},
 					"image_512": schema.StringAttribute{
-						Description: "Contains the URL for the 512 pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
+						Description: "Contains the URL for the 512-pixel square ratio, web-viewable images (GIFs, JPEGs, or PNGs) that represent a user's profile picture.",
 						Computed:    true,
 					},
 					"team": schema.StringAttribute{

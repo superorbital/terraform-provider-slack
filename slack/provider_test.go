@@ -16,7 +16,15 @@ const (
 	// test configuration so the Slack client is properly configured.
 	// You should use the TF_VAR_slack_token environment variable
 	// to pass in the token.
-	providerConfig = `variable slack_token {
+	providerConfig = `terraform {
+  required_providers {
+    slack = {
+      source = "superorbital/slack"
+    }
+  }
+}
+
+variable slack_token {
   # You can set this in the environment via TF_VAR_slack_token
   type = string
   description = "A valid Slack API Token"
@@ -40,7 +48,8 @@ var (
 	}
 
 	// These test variables should be set in a .env file at the git repo root.
-	slackTestUserID = ""
+	slackTestUserID         = ""
+	slackTestConversationID = ""
 )
 
 func TestMain(m *testing.M) {
@@ -55,6 +64,7 @@ func setup() {
 		if err != nil {
 			log.Fatal("Error loading required .env file for acceptance tests.")
 		}
+		slackTestConversationID = os.Getenv(testEnvVarRoot + "conversation_id")
 		slackTestUserID = os.Getenv(testEnvVarRoot + "user_id")
 	}
 }

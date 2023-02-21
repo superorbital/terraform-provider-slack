@@ -2,3 +2,4 @@
 # with valid data for your Slack workspace
 #
 terraform_provider_slack_test_user_id=U99ZZ9ZZZ9Z
+terraform_provider_slack_test_conversation_id=C99ZZ999ZZZ
